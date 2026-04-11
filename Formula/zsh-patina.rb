@@ -13,6 +13,7 @@ class ZshPatina < Formula
 
   def install
     bin.install "zsh-patina"
+    generate_completions_from_executable(bin/"zsh-patina", "completion", shell_parameter_format: :none, shells: [:zsh])
   end
 
   def caveats
