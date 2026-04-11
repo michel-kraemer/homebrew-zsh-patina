@@ -1,6 +1,7 @@
 class ZshPatina < Formula
   desc "$ A blazingly fast Zsh syntax highlighter"
   homepage "https://github.com/michel-kraemer/zsh-patina"
+  license "MIT"
 
   if Hardware::CPU.arm?
     url "https://github.com/michel-kraemer/zsh-patina/releases/download/1.3.1/zsh-patina-v1.3.1-aarch64-apple-darwin.tar.gz"
@@ -12,5 +13,15 @@ class ZshPatina < Formula
 
   def install
     bin.install "zsh-patina"
+  end
+
+  def caveats
+    <<~EOS
+      Initialize zsh-patina at the end of your `.zshrc` file by executing:
+        echo "eval \\"\\$($(brew --prefix)/bin/zsh-patina activate)\\"" >> ~/.zshrc
+
+      Then, restart your terminal or run:
+        exec zsh
+    EOS
   end
 end
