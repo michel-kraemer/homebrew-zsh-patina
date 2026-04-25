@@ -4,11 +4,11 @@ class ZshPatina < Formula
   license "MIT"
 
   if Hardware::CPU.arm?
-    url "https://github.com/michel-kraemer/zsh-patina/releases/download/1.5.0/zsh-patina-v1.5.0-aarch64-apple-darwin.tar.gz"
-    sha256 "f20f26a7015f087e38b2eb0df0bb0a344614d8017867bbb98b42b8348acc4b5a"
+    url "https://github.com/michel-kraemer/zsh-patina/releases/download/1.5.1/zsh-patina-v1.5.1-aarch64-apple-darwin.tar.gz"
+    sha256 "d088535c571b6961914263e9f9f2436d4d4c83e8cff0410a74d957250dfb73d8"
   else
-    url "https://github.com/michel-kraemer/zsh-patina/releases/download/1.5.0/zsh-patina-v1.5.0-x86_64-apple-darwin.tar.gz"
-    sha256 "514778e30cdaa106fa3a3a7e93152e0e5959ea91388a217507851836fd5dddef"
+    url "https://github.com/michel-kraemer/zsh-patina/releases/download/1.5.1/zsh-patina-v1.5.1-x86_64-apple-darwin.tar.gz"
+    sha256 "c5a1519a458e2c6fe4431c8afadcf8e6c71d2f96729f3ed73349c73e183c7b64"
   end
 
   def install
