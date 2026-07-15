@@ -1,11 +1,12 @@
-# zsh-patina Homebrew Formula
+zsh-patina Homebrew Formula
+===========================
 
-**THIS REPOSITORY IS DEPRECTATED**
+This repository contains the formula to install
+[zsh-patina](https://github.com/michel-kraemer/zsh-patina) on macOS with
+the [Homebrew package manager](https://brew.sh/).
 
-zsh-patina is now available in homebrew-core. Install it with:
+Installing zsh-patina
+---------------------
 
+    brew tap michel-kraemer/zsh-patina
     brew install zsh-patina
-
-If you've been using this repository before, execute:
-
-    brew untap michel-kraemer/zsh-patina
